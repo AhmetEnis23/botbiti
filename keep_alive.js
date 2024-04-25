@@ -1,4 +1,4 @@
-var http = reuire('http');
+var http = require('http');
 
 http.createServer(function (req, res) {
   res.write("yaşiom bilader");
