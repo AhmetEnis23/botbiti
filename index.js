@@ -7,7 +7,7 @@ const client = new tmi.Client({
   options: { debug: true },
   identity: {
     username: 'BotTutor',
-    password: 'oauth:t98atf9c3jfeplfwr1c5c3r5idn45l'
+    password: ''
   },
   channels: ['sibertutor']
 });
