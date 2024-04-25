@@ -1,5 +1,5 @@
 const tmi = require('tmi.js');
-
+const mySecret = process.env['TOKEN']
 const cooldowns = {}; // Kullanıcıların soğuma sürelerini takip edeceğimiz nesne
 const cooldownTime = 10; // 10 saniye soğuma süresi
 
@@ -7,7 +7,7 @@ const client = new tmi.Client({
   options: { debug: true },
   identity: {
     username: 'BotTutor',
-    password: ''
+    password: process.env.TOKEN
   },
   channels: ['sibertutor']
 });
