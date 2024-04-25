@@ -1,5 +1,5 @@
 const tmi = require('tmi.js');
-const keep_alive = require('.keep_alive.js')
+const keep_alive = require('./keep_alive.js')
 const mySecret = process.env['TOKEN']
 const cooldowns = {}; // Kullanıcıların soğuma sürelerini takip edeceğimiz nesne
 const cooldownTime = 10; // 10 saniye soğuma süresi
